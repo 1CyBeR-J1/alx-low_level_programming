@@ -1,37 +1,24 @@
 #include<stdio.h>
 
 /**
- * main - prints 2 poossible digits frpm 0 to 99
+ * main - prints all possible combinations of two two-digit numbers
  *
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	int w, x, y, z;
+	int i, j;
 
-	for (w = 0; w <= 9; w++)
+	for (i = 0; i < 10; i++)
 	{
-		for (x = w + 1; x <= 9; x++)
+		for (j = 0; j < 10; j++)
 		{
-			for (y = x + 1; y <= 9; y++)
-			{
-				for (z = y + 1; y <= 9; z++)
-				{
-					putchar(w + '0');
-					putchar(x + '0');
-					putchar(' ');
-					putchar(y + '0');
-					putchar(z + '0');
-
-					if (w == 9 && x == 8 && y == 9 && z == 9)
-					{
-						break;
-					}
-					putchar (',');
-					putchar (' ');
-				}
-			}
+			putchar(i + '0');
+			putchar(j + '0');
+			putchar(' ');
+			putchar(i + '0');
+			putchar(j + '0');
 		}
 	}
 	putchar('\n');
