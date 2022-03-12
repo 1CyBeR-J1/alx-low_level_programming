@@ -8,24 +8,29 @@
 
 int main(void)
 {
-	int x, y;
+	int w, x, y, z;
 
-	for (x = 0; x <= 98; x++)
+	for (w = 0; w <= 98; w++)
 	{
-		for (y = x + 1; y <= 99; y++)
+		for (x = w + 1; x <= 99; x++)
 		{
-			putchar(x + '0');
-			putchar(y + '0');
-			putchar(' ');
-			putchar(x + '0');
-			putchar(y + '0');
-
-			if (x == 98 && y == 99)
+			for (y = x + 1; y <= 98; y++)
 			{
-				break;
+				for (z = y + 1; y <= 97; z++)
+				{
+					putchar(w + '0');
+					putchar(x + '0');
+					putchar(' ');
+					putchar(y + '0');
+					putchar(z + '0');
+					if (w == 97 && x == 99 && y == 98 && z == 99)
+					{
+						break;
+					}
+					putchar (',');
+					putchar (' ');
+				}
 			}
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
