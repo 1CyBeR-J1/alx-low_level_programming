@@ -10,20 +10,21 @@ int main(void)
 {
 	int w, x, y, z;
 
-	for (w = 0; w <= 98; w++)
+	for (w = 0; w <= 9; w++)
 	{
-		for (x = w + 1; x <= 99; x++)
+		for (x = 0; x <= 9; x++)
 		{
-			for (y = x + 1; y <= 98; y++)
+			for (y = 0; y <= 9; y++)
 			{
-				for (z = y + 1; y <= 97; z++)
+				for (z = 1; y <= 9; z++)
 				{
 					putchar(w + '0');
 					putchar(x + '0');
 					putchar(' ');
 					putchar(y + '0');
 					putchar(z + '0');
-					if (w == 97 && x == 99 && y == 98 && z == 99)
+
+					if (w == 9 && x == 8 && y == 9 && z == 9)
 					{
 						break;
 					}
