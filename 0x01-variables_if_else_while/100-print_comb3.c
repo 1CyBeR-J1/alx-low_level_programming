@@ -18,9 +18,9 @@ int main(void)
 			putchar(i + '0');
 			putchar(j + '0');
 
-			while ((i = 8) && (j == 9))
+			if (i == 8 && j == 9)
 			{
-				continue;
+				break;
 			}
 			putchar(',');
 			putchar(' ');
