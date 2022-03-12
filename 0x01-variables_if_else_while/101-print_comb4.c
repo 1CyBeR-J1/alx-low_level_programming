@@ -12,9 +12,9 @@ int main(void)
 
 	for (x = 0; x < 10; x++)
 	{
-		for (y = 0; y < 9; y++)
+		for (y = x + 1; y < 9; y++)
 		{
-			for (z = 0; z < 10; z++)
+			for (z = y + 1; z < 10; z++)
 			{
 				putchar(x + '0');
 				putchar(y + '0');
