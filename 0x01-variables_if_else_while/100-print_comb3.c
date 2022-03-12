@@ -11,7 +11,7 @@ int main(void)
 	int i = 0;
 	int j = 0;
 
-	while (i < 10 && j < 10)
+	for  (i = j = 0; i < 10 && j < 10;)
 	{
 		putchar(i + '0');
 	}
