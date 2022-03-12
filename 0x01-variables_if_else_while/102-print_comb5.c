@@ -15,17 +15,17 @@ int main(void)
 		for (y = 0; y < 10; y++)
 		{
 			putchar(x + '0');
-			putchar(y + '0');
-			putchar(' ');
 			putchar(x + '0');
+			putchar(' ');
+			putchar(y + '0');
 			putchar(y + '0');
 
 			if (x == 98 && y == 99)
 			{
 				break;
 			}
-			putchar(' ');
 			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
