@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	char alp
+	char alp;
 
-	while (alp = 'a'; alp <= 'z'; alp++)
+	for (alp = 'a'; alp <= 'z'; alp++)
 	{
 		_putchar('%c', alp)
 	}
