@@ -14,6 +14,6 @@ int main(void)
 		for (i = 0; i < 9; i++)
 		{
 			_putchar(letter[i]);
-		}	
+		}
 	return (0);
 }
