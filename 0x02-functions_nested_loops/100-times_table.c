@@ -24,10 +24,11 @@ void print_times_table(int n)
 
 				prd = num * mul;
 
-				if (prd <= 99 || prd <= 9)
-				{
+				if (prd <= 99)
 					_putchar(' ');
-				}
+
+				if (prd <= 9)
+					_putchar(' ');
 
 				if (prd >= 100)
 				{
