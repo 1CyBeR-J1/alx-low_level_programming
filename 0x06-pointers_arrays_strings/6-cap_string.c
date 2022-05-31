@@ -3,7 +3,7 @@
 /**
  * cap_string - function that capitalizes all words of a string
  * @s: string
- * Result: result of capitalization
+ * Result: string
  */
 
 char *cap_string(char *s)
