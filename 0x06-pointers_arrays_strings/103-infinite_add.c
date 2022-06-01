@@ -5,7 +5,8 @@
  * @n1: first number
  * @n2: second number
  * @r: buffer to store result
- * size_r: buffer size
+ * @size_r: buffer size
+ * Return: result of addition
  *
  */
 
