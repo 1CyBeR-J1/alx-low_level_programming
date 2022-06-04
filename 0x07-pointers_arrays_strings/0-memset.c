@@ -5,7 +5,7 @@
  * @s: pointer
  * @b: byte
  * @n: number of byte
- * 
+ *
  * Return: pointer to the memory
  */
 
