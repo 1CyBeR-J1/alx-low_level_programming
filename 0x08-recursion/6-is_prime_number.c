@@ -14,23 +14,23 @@ int is_prime_number(int n)
 		return (0);
 	else if (n == 2)
 		return (1);
-	return (prime_number(n, 2));
+	return (getNPrim(n, 2));
 }
 
 
 /**
- * prime_number - get if it's 0 or 1
+ * getNPrim - get if it's 0 or 1
  * @n: number
  * @i: counter
  *
  * Return: result
  */
 
-int prime_number(int n, int i)
+int getNPrim(int n, int i)
 {
 	if (n == i)
 		return (1);
 	if (n % i == 0)
 		return (0);
-	return (prime_number(n, i + 1));
+	return (getNPrim(n, i + 1));
 }
