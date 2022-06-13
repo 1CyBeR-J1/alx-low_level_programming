@@ -7,13 +7,9 @@
  * Return: Always 0 (success)
  */
 
-int main(void)
+int _putchar(char c)
 {
-	char letter[9] = "_putchar\n";
-	int i;
-		for (i = 0; i < 9; i++)
-		{
-			_putchar(letter[i]);
-		}
+	printf("Prints the Character %c \n", c);
+
 	return (0);
 }
