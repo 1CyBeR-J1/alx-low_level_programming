@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - program that adds positive numbers
@@ -18,7 +19,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		print ("Error\n");
+		printf("Error\n");
 
 		return (1);
 	}
