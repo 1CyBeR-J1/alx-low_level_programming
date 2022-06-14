@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * main - program that adds positive numbers
+ * main - programi that adds positive numbers
  * @argc: numbers of arguments
  * @argv: Array of pointers
  *
@@ -13,21 +13,24 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b, sum = 0;
+	int sum = 0, i, j;
 
-	if (argc == 0)
-		printf("0\n");
-
-	if (isdigit(argv[a][b]) == 00)
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-
-		return (1);
+		for (j = 0; argv[i][j]; j++)
+		{
+			if (isdigit(argv[i][j]) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-	sum += (a + b);
+	for (sum = 1; i < argc; i++)
+	{
+		sum += atoi(argv[i]);
+	}
 
 	printf("%d\n", sum);
 
