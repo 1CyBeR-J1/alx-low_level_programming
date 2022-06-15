@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (b = 0; av[a][b] != '\0'; b++)
 		{
-			s[b] = av[a][b];
+			s[c] = av[a][b];
 			c++;
 		}
 		s[c] = '\n';
