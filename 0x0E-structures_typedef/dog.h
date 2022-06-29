@@ -1,5 +1,5 @@
 #ifndef DOG_H
-#define dog_H
+#define DOG_H
 
 /**
  * struct dog - Structure of a Dog
