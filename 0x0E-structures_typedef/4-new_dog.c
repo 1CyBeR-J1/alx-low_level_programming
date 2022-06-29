@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "main.h"
+#include "dog.h"
 int _strlen(char *s);
 char *_strcpy(char *x, char *y);
 
