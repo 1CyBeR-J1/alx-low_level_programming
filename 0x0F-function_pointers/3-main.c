@@ -25,6 +25,8 @@ int main(int argc, char *argv[])
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
+	o =  *argv[2];
+
 	fun = get_op_func(argv[2]);
 
 	if (fun == NULL)
