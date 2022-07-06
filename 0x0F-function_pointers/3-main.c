@@ -13,6 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b, c;
+	char o;
 
 	int (*fun)(int, int);
 
@@ -30,6 +31,12 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		exit(99);
+	}
+
+	if ((o == '/' || o == '%') && b == 0)
+	{
+		printf("Error\n");
+		return (100);
 	}
 
 	c = fun(a, b);
