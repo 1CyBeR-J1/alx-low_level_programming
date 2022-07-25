@@ -1,5 +1,6 @@
-#include "variadic_functions"
+#include "variadic_functions.h"
 #include <stdio.h>
+#include <stdarg.h>
 
 /**
  * print_all - function that prints anything.
@@ -34,7 +35,7 @@ void print_all(const char * const format, ...)
 					s = va_arg(args_list, char *);
 					if (!s)
 						s = "(nil)";
-					printf("%s%s, sep, s);
+					printf("%s%s", sep, s);
 					break;
 				default:
 					i++;
@@ -46,4 +47,5 @@ void print_all(const char * const format, ...)
 	}
 	printf("\n");
 	va_end(args_list);
+
 }
