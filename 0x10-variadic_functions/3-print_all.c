@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 					printf("%s%i", sep, va_arg(args_list, int));
 					break;
 				case 'f':
-					printf("%s%f", sep, va_arg(args_list, int));
+					printf("%s%f", sep, va_arg(args_list, double));
 					break;
 				case 's':
 					s = va_arg(args_list, char *);
