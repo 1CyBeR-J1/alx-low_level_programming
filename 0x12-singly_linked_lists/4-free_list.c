@@ -4,7 +4,7 @@
 
 /**
  * free_list - function that frees a list_t list.
- * head: pointer
+ * @head: pointer
  *
  * Return: nothing
  */
@@ -12,15 +12,13 @@
 
 void free_list(list_t *head)
 {
-	list_t *current, *next;
+	list_t *ptr;
 
-	current = head;
-
-	while (!current)
+	while (head)
 	{
-		next = current->next;
-		free(current);
-		current = next;
+		ptr = head->next;
+		free(head->str);
+		free(head);
+		head = ptr;
 	}
-	head = NULL;
 }
