@@ -9,7 +9,7 @@
 
 int _putchar(char c)
 {
-	printf("Prints the Character %c \n", c);
+        printf("Prints the Character %c \n", c);
 
-	return (0);
+        return (0);
 }
